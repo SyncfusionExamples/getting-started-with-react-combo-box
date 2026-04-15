@@ -1,15 +1,58 @@
 # Getting Started with the React ComboBox Component
 
-Quickly get started with the Syncfusion React ComboBox Component. This project contains a few of the control’s basic features, like binding list and remote data, and customizing pop-up height and width.
+## Repository Description
+A guide for implementing the Syncfusion React ComboBox Component with examples covering data binding, remote data sources, and popup customization.
 
-Documentation: https://ej2.syncfusion.com/react/documentation/combo-box/getting-started/
+## Overview
+Quickly get started with the Syncfusion React ComboBox Component. This project demonstrates core features including list and remote data binding, customizing pop-up height and width, and React integration.
 
-Online examples: https://ej2.syncfusion.com/react/demos/#/bootstrap5/combo-box/default
+## Features
+- **Data Binding**: Bind local and remote data sources
+- **Remote Data**: Fetch data from external APIs
+- **Popup Customization**: Control height and width
+- **React Integration**: Full React component compatibility
+- **Flexible Configuration**: Extensive customization options
 
-## Project prerequisites
+## Prerequisites
+- Node.js (latest version)
+- Visual Studio Code
+- React 16.x or higher
 
-Make sure that you have the latest versions of NodeJS and Visual Studio Code in your machine before starting to work on this project.
+## Installation
+```bash
+git clone https://github.com/syncfusion/getting-started-with-react-combo-box.git
+cd getting-started-with-react-combo-box
+npm install
+```
 
-### How to run this application?
+## Running the Application
+1. Clone the repository
+2. Open in Visual Studio Code
+3. Run `npm install`
+4. Run `npm start`
 
-To run this application, you need to clone the `getting-started-with-react-combo-box` repository and then open it in Visual Studio Code. Now, simply install all the necessary react packages into your current project using the `npm install` command and run your project using the `npm start` command.
+## Basic Usage
+```javascript
+import { ComboBoxComponent } from '@syncfusion/ej2-react-dropdowns';
+
+const App = () => {
+  const data = ['Item 1', 'Item 2'];
+  return <ComboBoxComponent dataSource={data} />;
+};
+```
+
+## Customization
+```javascript
+<ComboBoxComponent 
+  dataSource={data}
+  popupHeight="300px"
+  popupWidth="200px"
+/>
+```
+
+## Resources
+- **Documentation**: https://ej2.syncfusion.com/react/documentation/combo-box/getting-started/
+- **Examples**: https://ej2.syncfusion.com/react/demos/#/bootstrap5/combo-box/default
+
+## Support
+For questions or issues, visit Syncfusion support or open an issue on the repository.
